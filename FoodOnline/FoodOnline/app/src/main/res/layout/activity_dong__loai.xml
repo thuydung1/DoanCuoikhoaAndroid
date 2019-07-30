@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="6dip"
+    tools:context=".LayoutDONG.ActivityDong_Loai">
+
+    <ImageView
+        android:id="@+id/imagehinh"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:src="@mipmap/iconapp"/>
+
+
+    <TextView
+        android:id="@+id/hienthitenloai"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/imagehinh"
+        android:gravity="center_vertical"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

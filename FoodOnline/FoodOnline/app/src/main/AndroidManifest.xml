@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodonline">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activitys.SuaThucAn"></activity>
+        <activity android:name=".LayoutDONG.Activity_Dong_ThucAn" />
+        <activity android:name=".Activitys.ThemThucAn" >
+        </activity>
+        <activity android:name=".Activitys.ListViewThucAn" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.foodonline.Activitys.ListViewLoai" />
+        </activity>
+        <activity android:name=".LayoutDONG.ActivityDong_Loai" />
+        <activity android:name=".Activitys.DangkyActiviti" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.foodonline.Activitys.DangNhapActivity" />
+        </activity>
+        <activity android:name=".Activitys.ThemLoai">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.foodonline.Activitys.ListViewLoai" />
+        </activity>
+        <activity android:name=".Activitys.ListViewLoai" />
+        <activity android:name=".Activitys.DangNhapActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
